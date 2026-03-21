@@ -1,4 +1,4 @@
-# ❄️ dates
+# 🍃 dates
 
 plan and store your best dates
 
