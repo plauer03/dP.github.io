@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="icon512.png">
+
+    <link rel="apple-touch-icon" href="icon512.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     
     <title>dates</title>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
@@ -22,7 +25,7 @@
         :root {
             --color-bg: #f8f8f8; /* Back to slightly warmer/lighter grey */
             --color-surface: #ffffff;
-            --color-primary: #52a4da; /* Winter Blue Accent */
+            --color-primary: #436a10; /* Spring Green Accent */
             --color-text-main: #333333; 
             --color-text-muted: #737373; 
             --color-success: #10b981; 
@@ -579,7 +582,7 @@
                 fabButton.style.display = 'none'; headerTitle.textContent = 'account';
             } else {
                 fabButton.style.display = tab === 'geplant' ? 'flex' : 'none';
-                headerTitle.textContent = tab === 'geplant' ? 'dates ❄️' : 'memories ';
+                headerTitle.textContent = tab === 'geplant' ? 'dates 🍃' : 'memories ';
                 searchInput.placeholder = tab === 'geplant' ? 'dates suchen...' : 'memories suchen...';
             }
             renderEvents();
@@ -660,7 +663,7 @@
     <!-- AUTH SCREEN (RESTORED ORIGINAL) -->
     <div id="auth-screen" class="app-container" style="justify-content: center; align-items: center; display: flex;">
         <div style="width: 75%; max-width: 380px; padding: 30px; background-color: var(--color-surface); border-radius: 25px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);">
-            <h1 style="font-size: 2rem; font-weight: 800; text-align: center; margin-bottom: 25px; color: var(--color-primary);">❄️ dates</h1>
+            <h1 style="font-size: 2rem; font-weight: 800; text-align: center; margin-bottom: 25px; color: var(--color-primary);">🍃 dates</h1>
             <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
                 <button id="toggle-login" class="auth-toggle-button active">Anmelden</button>
                 <button id="toggle-register" class="auth-toggle-button">Registrieren</button>
